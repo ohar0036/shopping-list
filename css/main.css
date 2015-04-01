@@ -1,9 +1,13 @@
 body {
   background: #f2f2f2;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   margin: 0;
   padding: 0;
+  color: #727275;
 }
+
+/* HEADER */
 
 header {
   background: #fff;
@@ -12,6 +16,7 @@ header {
 }
 
 h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
   color: #2fb8ac;
   text-align: center;
   font-size: 3em;
@@ -23,15 +28,53 @@ h1 {
 h2 {
   margin: 0;
   text-align: center;
-  font-weight: 400;
+  font-weight: 300;
+  text-transform: uppercase;;
   color: #808080;
-  font-size: 1.25em;
+  font-size: 1.15em;
 }
+
+/* LIST */
+
+.list {
+  background: #fff;
+  max-width: 31.250em;
+  margin: 2em auto;
+  padding: 1.5em;
+  border-radius: 0.45em;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 1em 0;
+}
+
+li {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 1em 0;
+  font-size: 1.2em;
+}
+
+li a i {
+  color: #2fb8ac;
+  margin-right: 1em;
+  background: #f2f2f2;
+  border-radius: 50%;
+  padding: 0.35em;
+}
+
+li a i:hover {
+  color: #fff;
+  background: #2fb8ac;
+}
+
 
 .add_item {
   height: 3.3em;
   border: 2px solid #f2f2f2;
   font-size: 1em;
+  color: #727275;
   line-height: 1em;
   background: #f2f2f2;
   border-radius: 0.35em 0 0 0.35em;
@@ -68,50 +111,24 @@ h2 {
   outline: none;
 }
 
-
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0 0 1em 0;
+.uncheck {
+  color:#dbdbdb;
+  text-decoration: line-through;
 }
 
-li {
-  border-bottom: 1px solid #f2f2f2;
-  padding: 1em 0;
-  font-size: 1.25em;
-}
-
-li a i {
-  color: #2fb8ac;
-  margin-right: 1em;
-  background: #f2f2f2;
-  border-radius: 50%;
-  padding: 0.35em;
-}
-
-li a i:hover {
-  color: #fff;
-  background: #2fb8ac;
+.uncheck .fa-check {
+  color: #dbdbdb;
 }
 
 .remove {
   background: none;
   float: right;
-  color: #dbdbdb ;
+  color: #dbdbdb;
 }
 
 .remove:hover {
   color: #2fb8ac;
   background: none;
-}
-
-.list {
-  background: #fff;
-  max-width: 31.250em;
-  margin: 2em auto;
-  padding: 1.5em;
-  border-radius: 0.45em;
 }
 
 .reset {
@@ -121,7 +138,9 @@ li a i:hover {
 }
 
 .reset a {
-  font-size: 1em;
+  font-size: 0.75em;
+  font-weight: 400;
+  text-transform: uppercase;
   text-decoration: none;
   color: #2fb8ac;
   background: #f2f2f2;
